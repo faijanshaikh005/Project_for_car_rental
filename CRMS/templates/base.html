@@ -1,0 +1,85 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/contact.css">
+    <link rel="stylesheet" href="{% static 'css/Register.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<style>
+    .alert-error{
+        background: yellow;
+    }
+</style>
+<body>
+
+
+    <div class="navbar">
+        <input type="checkbox" name="" value="" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div><label class="logo">Car</label></div>
+        
+
+        <ul>
+            <li><a class="contact" href="./customer_dashboard.html">Dashboard</a></li>
+            <li><a class="contact" href="./contact.html">Contact Us</a></li>
+            <li><a class="contact" href="./register.html">Register</a></li>
+            <!-- <li><a class="register" href="./Register.html">Register</a></li> -->
+            <li><a class="cars" href="./Cars.html">Cars List</a></li>
+            <li><a class="cars" href="./BookYourCar.html">Book your car</a></li>
+            <li><a class="about" href="./about.html">About</a></li>
+            <li><a class="home" href="./index.html">Home</a></li>
+        </ul>
+
+    </div>
+
+   
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Alert!</strong> {{message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    {% endfor %}
+    
+    
+    {% block body %} {% endblock body %}
+
+    <footer class="footer">
+        <h5>Connect with us</h5>
+        <div class="img">
+            <img src="{% static 'images/facebook1.jpg' %}" class="imgA">
+            <img src="{% static 'images/tweeter1.jpg' %}" class="imgA">
+            <img src="{% static 'images/insta1.jpg' %}" class="imgA">
+            <img src="{% static 'images/linkedin1.jpg' %}" class="imgA">
+            <img src="{% static 'images/youtube1.jpg' %}" class="imgA">
+        </div>
+        <br>
+        <a href="omkardokhale@0493gmail.com" class="ftext">Copyright 2023 | omkardokhale0493@gmail.com</a><br>
+    </footer>
+
+    <!-- <script src="static/index.js"></scrip> -->
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/login.js' %}"></script>
+
+    <!-- <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script> -->
+
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <script src="{% static 'js/logo.js' %}" crossorigin="anonymous"></script>
+</body>
+
+</html>

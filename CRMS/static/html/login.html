@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Cars Rental Project</title>
+</head>
+
+<body>
+    <header class="navbar">
+
+        <ul>
+            <div class="logo">
+                <h3>Car Rental Management System</h3>
+
+            </div>
+           
+            <li><a class="logout" href="index.html">Home</a></li>
+
+        </ul>
+
+    </header>
+
+    <div class="container">
+        <h1 class="lable" id="u">User Login</h1>
+        
+        <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+            
+            <div class="font">Email</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">Please fill up your Email</div>
+
+            <div class="font font2">Password</div>
+            <input type="password" name="password">
+            <div id="password_error">Please fill up your Password</div>
+            
+            <button type="submit" id="lb">Login</button>
+            
+            <p>New around here?<a id="s" href="Register.html">Sign up</a></p>
+            <a id="r" href="recover forgot password.html">Forgot password</a>
+        </form>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

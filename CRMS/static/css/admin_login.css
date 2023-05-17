@@ -1,0 +1,142 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 1.2rem;
+}
+
+/* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+
+#lb:hover{
+background-color: #151c6a;
+}
+
+.login_form #email_error, #password_error{
+    font-size: 1rem;
+    color: red;
+    background: rgba(255,0,0,0.1);
+    padding: .5rem .8rem;
+    margin-right: 4rem;
+    border-radius: .3rem;
+    border: .1rem solid #ef9a9a;
+    display: none;
+}
+
+.container{
+    position: relative;
+    margin-top:5rem;
+    padding: 0rem .5rem 0rem;
+    box-shadow: .2rem .2rem 1.5rem;
+    width: 28.12rem;
+    height: 30rem;
+    background: #dedede;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.label, #u{
+    text-align: center;
+    font-weight: bold;
+    color: #130f40;
+    padding-bottom: 2.5rem;
+    
+  
+}
+
+.login_form{
+    padding: 3.1rem 3.7rem;
+    margin: 1.8rem .6rem;
+    width: 31.2rem;
+}
+
+.login_form .font{
+    font-size: 1.1rem;
+    color: #130f40;
+    margin: .1rem;
+    
+
+}
+
+.login_form input{
+    height: 2.5rem;
+    width: 21.2rem;
+    padding: .3rem .3rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: .1rem solid silver;
+}
+
+.login_form .font2{
+    margin-top: 1.8rem;
+}
+
+.login_form button{
+    margin: 2.8rem 0 1.8rem 0;
+    height: 2.8rem;
+    width: 21.2rem;
+    font-size: 1.25rem;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #1a237e;
+    border-radius: .3rem;
+    border: .1rem solid #3949ab;
+}
+
+
+#r,#s{
+    color: blue;
+    text-decoration: none;
+}
+
+#r:hover{
+    color:orange;
+}
+
+#s:hover{
+    color: orange;
+}
+
+body {
+    /* background: linear-gradient(to bottom, rgba(0,175,155,0.5), rgba(150,201,61,1)); */
+    background-color: rgba(150,201,61,1);
+    /* background-size: 62.5rem; */
+    bottom: 2rem;
+    
+    
+}
+
+
+.container{
+    box-shadow: .2rem .2rem 0.9rem;
+}
+
+@media(max-width: 998px)
+{
+    html{
+        font-size: 55%;
+    }
+}

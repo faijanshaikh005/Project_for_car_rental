@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="static/css/index.css">
+  <title> {% block title %}Home Page{% endblock title %}</title>
+</head>
+
+<body>
+ 
+  {% block body %}
+  <header class="navbar">
+
+    <ul>
+        <div class="logo">
+            <h3>Car Rental Management System</h3>
+
+        </div>
+        <li><a class="active" href="Logout.html">Logout</a></li>
+        <li><a class="about" href="contact.html">Contact Us</a></li>
+        <li><a class="book" href="login.html">Login</a></li>
+        <li><a class="cars" href="Register.html">Register</a></li>
+        <li><a class="cars" href="Cars.html">Cars List</a></li>
+        <li><a class="register" href="Cars.html">Vehicles</a></li> -->
+        <li><a class="login" href="Book your car.html">Book your car</a></li>
+        <li><a class="cantact" href="about.html">About</a></li>
+        <li><a class="logout" href="index.html">Home</a></li>
+    </ul>
+
+</header>
+<!-- ---------------------------main---------------------- -->
+  <main px="0">
+    <div class="slideshow">
+      <img class="mySlides" src="./static/images/car5 (1).jpg">
+      <img class="mySlides" src="./static/images/car13.jpg">
+      <img class="mySlides" src="./static/images/car8.jpg">
+    </div>
+
+    <h2 style="color: rgb(234, 65, 39); text-align: center; margin-top: 10px; margin-bottom: 10px;">Welcome to Car
+      Rental
+      Management System</h2>
+
+    <!-- Cards -->
+    <div class="wrapper">
+      <div class="card">
+        <img src="./static/images/car1.jpg">
+        <div class="info">
+          <h1>Electric Car</h1>
+          <p>An electric car, battery electric car, or all-electric car is an automobile that is propelled by one or
+            more
+            electric motors, using only energy stored in batteries. Compared to internal combustion engine (ICE)
+            vehicles,
+            electric cars are quieter, have no exhaust emissions, and lower emissions overall.</p>
+          <a href="Cars.html" class="btn">Show More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./static/images/car2.jpg">
+        <div class="info">
+          <h1>Petrol Car</h1>
+          <p>A petrol vehicle typically uses a spark-ignited internal combustion engine. In a spark-ignited system, the
+            fuel is injected into the combustion chamber and combined with air. The air/fuel mixture is ignited by a
+            spark
+            from the spark plug. Petrol cars are available in either manual and automatic transmission.</p>
+          <a href="Cars.html" class="btn">Show More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./static/images/car12.jpg">
+        <div class="info">
+          <h1>Diesel Car</h1>
+          <p>The diesel engine, named after Rudolf Diesel, is an internal combustion engine in which ignition of the
+            fuel
+            is caused by the elevated temperature of the air in the cylinder due to mechanical compression; thus, the
+            diesel engine is called a compression-ignition engine (CI engine).</p>
+          <a href="Cars.html" class="btn">Show More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./static/images/car11.jpg">
+        <div class="info">
+          <h1>CNG Car</h1>
+          <p>CNG, also known as compressed natural gas, is an eco-friendly alternative to gasoline. Made by compressing
+            natural gas (methane) down to less than 1% of its volume, CNG fuel is safer than gasoline and diesel because
+            it is non-toxic and does not contaminate ground water.</p>
+          <a href="Cars.html" class="btn">Show More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- end cards -->
+  </main>
+
+  {% endblock body %}
+
+
+  <footer>
+    <p><br>
+        <a href="omkardokhale@0493gmail.com" style="text-decoration: none; font-size: large;">Copyright 2023 | omkardokhale0493@gmail.com</a>
+    </p>
+</footer>
+
+
+
+<script src="static/js/index.js"></script>
+
+</body>
+
+</html>

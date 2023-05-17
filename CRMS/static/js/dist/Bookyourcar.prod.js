@@ -1,0 +1,1 @@
+"use strict";function ShowAndHide(){var e=document.getElementById("SectionName");"none"==e.style.display?e.style.display="block":e.style.display="none"}

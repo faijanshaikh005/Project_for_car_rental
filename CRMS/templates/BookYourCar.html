@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/Book your car.css">
+    <title>Book your car</title>
+</head>
+
+<body>
+
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Alert!</strong> {{message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+
+    <div class="navbar">
+        <!-- <input type="checkbox" name="" value="" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label> -->
+        <label class="logo">Car</label>
+
+        <ul>
+            <li><a class="contact" href="./contact.html">Contact Us</a></li>
+            <li><a class="register" href="./register.html">Register</a></li>
+            <li><a class="cars1" href="./Cars.html">Cars List</a></li>
+            <li><a class="cars" href="./BookYourCar.html">Book your car</a></li>
+            <li><a class="about" href="./about.html">About</a></li>
+            <li><a class="home" href="./index.html">Home</a></li>
+        </ul>
+
+    </div>
+
+    <main>
+        <div class="heading">
+            <h2>Book your car</h2>
+        </div>
+        <div class="select">
+            <form action="" method="post" id="form">
+              
+                <label for="car"></label>
+                <input type="date" class="selectdate" id="car" name="pickup">
+                <!-- <input type="date" placeholder="Select date" class="selectdate"> -->
+                <h3 class="selectdate">Pick-up date</h3><br>
+                <input type="date" class="selectdate1" id="car" name="dropoff">
+                <h3 class="selectdate1">Drop-off date</h3><br>
+            </form>
+
+
+            <button ONCLICK="ShowAndHide()" class="searchbtn">Search Car</button>
+        </div>
+
+
+        
+            <div class="listcar" ID="SectionName" STYLE="display:none">
+                <div class="row">
+                    <div class="card1">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki Swift</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: MUV</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="card2">
+                        <img src="static/images/120.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Punch</p>
+                        <p class="cardtext1" name="carcompany">Company: TATA</p>
+                        <p class="cardtext1" name="carrent">Price Per Day: Rs.3000 </p>
+                        <p class="cardtext1" name="cartype">Type: SUV</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="card3">
+                        <img src="static/images/104.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Verna</p>
+                        <p class="cardtext1" name="carcompany">Company: Hyundai</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: SUV</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="card4">
+                        <img src="static/images/105.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Creta</p>
+                        <p class="cardtext1" name="carcompany">Company: Hyundai</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type:SUV</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="card5">
+                        <img src="static/images/107.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="card6">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+
+                <hr>
+
+                <div class="row">
+                    <div class="card7">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="card7">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="card7">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="card7">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="card7">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="card7">
+                        <img src="static/images/car1.jpg">
+                    </div>
+                    <div class="cardtext">
+                        <p class="cardtext1" name="carname">Name: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carcompany">Company: Maruti Suzuki</p>
+                        <p class="cardtext1" name="carrent">Car rent Per Day: Rs.2000 </p>
+                        <p class="cardtext1" name="cartype">Type: Maruti Suzuki</p>
+                    </div>
+                    <div class="cardbtn">
+                        <button type="submit" class="bookbtn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="footer">
+        <h5>Connect with us</h5>
+        <div class="img">
+            <img src="static/images/facebook1.jpg" class="imgA">
+            <img src="static/images/tweeter1.jpg" class="imgA">
+            <img src="static/images/insta1.jpg" class="imgA">
+            <img src="static/images/linkedin1.jpg" class="imgA">
+            <img src="static/images/youtube1.jpg" class="imgA">
+        </div>
+        <br>
+        <a href="omkardokhale@0493gmail.com" class="ftext">Copyright 2023 | omkardokhale0493@gmail.com</a><br>
+    </footer>
+
+
+
+
+    <script src="static/js/Bookyourcar.js"></script>
+</body>
+
+</html>

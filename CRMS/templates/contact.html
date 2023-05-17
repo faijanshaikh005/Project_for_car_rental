@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% load static %}
+
+
+ <body> 
+
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+        <strong>{{ message }}</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+
+    {% block body %}  
+
+    <div class="container-fluid px-0 mb-3">
+        <img src="{% static 'images/contact.jpg' %}" id="img" class="img1" alt="...">
+    </div>
+
+
+    <div class="bd-example">
+        <form action="{% url "contact" %}" method="post" id="form">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="exampleInputPassword1">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Phone Number</label>
+            <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter your number">
+          </div>
+          <div class="desc">
+            <label for="desc">Desc</label>
+            <textarea class="form-control" id="desc" name="desc" rows="4" cols="50" placeholder="Text in details"></textarea>
+          </div><br>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+      </div>
+
+
+    {% endblock body %}  
+
+
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="static/css/index.css"> -->
+    <link rel="stylesheet" href="static/css/Cars.css">
+    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+
+</head>
+
+
+<body>
+    <div class="navbar">
+        <div><label class="logo">Car</label></div>
+        <ul>
+            <li><a class="contact" href="./customer_dashboard.html">Dashboard</a></li>
+            <li><a class="about" href="./contact.html">Contact Us</a></li>
+            <li><a class="cars" href="./Cars.html">Cars List</a></li>
+            <li><a class="car" href="./BookYourCar.html">Book your car</a></li>
+            <li><a class="about" href="./about.html">About</a></li>
+            <li><a class="home" href="./index.html">Home</a></li>
+        </ul>
+
+    </div>
+
+
+    <div class="split_left">
+        <form class="text" method="post" action="/Cars"
+            style="border: 0.5px solid rgb(218, 213, 213); background-color: rgb(218, 213, 213);">
+            {% csrf_token %}
+
+            <p><b>Company</b></p>
+            <input type="checkbox" id="" value="">TATA<br>
+            <input type="checkbox" id="" value="">Audi<br>
+            <input type="checkbox" id="" value="">Maruti<br>
+            <input type="checkbox" id="" value="">Mercedes<br>
+            <input type="checkbox" id="" value="">Toyata<br>
+            <input type="checkbox" id="" value="">Kia<br>
+            <input type="checkbox" id="" value="">Tesla<br><br>
+
+            <p><b>Car Type</b></p>
+            <input type="checkbox" id="" value="">Hatchback<br>
+            <input type="checkbox" id="" value="">Sedan<br>
+            <input type="checkbox" id="" value="">SUV<br>
+            <input type="checkbox" id="" value="">MUV<br>
+            <input type="checkbox" id="" value="">Coupe<br>
+            <input type="checkbox" id="" value="">Convertible<br>
+            <input type="checkbox" id="" value="">Pickup Truck<br><br>
+
+
+            <p><b>Fuel Type</b></p>
+            <input type="checkbox" id="" value="">Petrol<br>
+            <input type="checkbox" id="" value="">Diesel<br>
+            <input type="checkbox" id="" value="">CNG<br>
+            <input type="checkbox" id="" value="">Electric<br><br>
+
+            <p><b>Price Range</b></p>
+            <input type="checkbox" id="" value="">Under &#8377;1000<br>
+            <input type="checkbox" id="" value="">Under &#8377;1000-2000<br>
+            <input type="checkbox" id="" value="">above &#8377;2000<br>
+
+            <p><b>Price Range</b></p>
+            <input type="checkbox" id="" value="">Under &#8377;1000<br>
+            <input type="checkbox" id="" value="">Under &#8377;1000-2000<br>
+            <input type="checkbox" id="" value="">above &#8377;2000<br>
+
+            <p><b>Price Range</b></p>
+            <input type="checkbox" id="" value="">Under &#8377;1000<br>
+            <input type="checkbox" id="" value="">Under &#8377;1000-2000<br>
+            <input type="checkbox" id="" value="">above &#8377;2000<br>
+
+            <p><b>Price Range</b></p>
+            <input type="checkbox" id="" value="">Under &#8377;1000<br>
+            <input type="checkbox" id="" value="">Under &#8377;1000-2000<br>
+            <input type="checkbox" id="" value="">above &#8377;2000<br>
+
+            <p><b>Price Range</b></p>
+            <input type="checkbox" id="" value="">Under &#8377;1000<br>
+            <input type="checkbox" id="" value="">Under &#8377;1000-2000<br>
+            <input type="checkbox" id="" value="">above &#8377;2000<br>
+
+            <p><b>Price Range</b></p>
+            <input type="checkbox" id="" value="">Under &#8377;1000<br>
+            <input type="checkbox" id="" value="">Under &#8377;1000-2000<br>
+            <input type="checkbox" id="" value="">above &#8377;2000<br><br>
+
+            <button class="applybtn" type="submit">Apply</button>
+        </form>
+    </div>
+
+
+    <div class="slidercard">
+        <!-- -------------------------------------1st------------------------------------- -->
+        
+<label class="label"><b>All Brands</b></label>
+
+        <div class="carbrands1">
+
+            <div class="cardbrands">
+                <div class="box">
+                    <a href="./honda.html"><img src="static/carlogo/honda.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./honda.html" class="logoname">Honda</a>
+                </div>
+            </div>
+
+
+            
+            <div class="cardbrands">
+                <div class="box">
+                     <a href="./hyundai.html"><img src="static/carlogo/hyundai.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./hyundai.html" class="logoname1">Hyundai</a>
+                </div>
+            </div>
+
+            
+            <div class="cardbrands">
+                <div class="box">
+                   <a href="./kia.html"><img src="static/carlogo/kia.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./kia.html" class="logoname">kia</a>
+                </div>
+            </div>
+
+            
+            <div class="cardbrands">
+                <div class="box">
+                     <a href="./mahindra.html"><img src="static/carlogo/mahindra.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./mahindra.html" class="logoname2">Mahindra</a>
+                </div>
+            </div>
+
+            
+            <div class="cardbrands">
+                <div class="box">
+                    <a href="./mg.html"><img src="static/carlogo/mg.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./mg.html" class="logoname3">MG</a>
+                </div>
+            </div>
+
+            
+            <div class="cardbrands">
+                <div class="box">
+                    <a href="./maruti.html"> <img src="static/carlogo/maruti.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./maruti.html" class="logoname">Maruti</a>
+                </div>
+            </div>
+
+            
+            <div class="cardbrands">
+                <div class="box">
+                    <a href="./tata.html"><img src="static/carlogo/tata.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./tata.html" class="logoname4">Tata</a>
+                </div>
+            </div>
+
+            <div class="cardbrands">
+                <div class="box">
+                    <a href="./toyota.html"><img src="static/carlogo/toyota.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./toyota.html" class="logoname">Toyota</a>
+                </div>
+            </div>
+
+            <div class="cardbrands">
+                <div class="box">
+                     <a href="./force.html"><img src="static/carlogo/force-motors.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./force.html" class="logoname5">Force Motors</a>
+                </div>
+            </div>
+
+            <div class="cardbrands">
+                <div class="box">
+                    <a href="./volkswagen.html"><img src="static/carlogo/volkswagen.jpg" alt="" /></a>
+                </div>
+                <div class="profile-details">
+                    <a href="./volkswagen.html" class="logoname6">volkswagen</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        
+        
+        <div class="container swiper">
+            <div class="slide-container">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="slidercard">
+        <!-- --------------------------------2nd--------------------------------- -->
+
+        <div class="container swiper">
+            <div class="slide-container">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="slidercard">
+        <!-- ----------------------------------------3rd------------------------------- -->
+
+        <div class="container swiper">
+            <div class="slide-container">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <img src="{% static 'images/car1.jpg' %}" alt="" />
+                        </div>
+                        <div class="profile-details">
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <h5>Connect with us</h5>
+        <div class="img">
+            <img src="{% static 'images/facebook1.jpg' %}">
+            <img src="{% static 'images/tweeter1.jpg' %}">
+            <img src="{% static 'images/insta1.jpg' %}">
+            <img src="{% static 'images/linkedin1.jpg' %}">
+            <img src="{% static 'images/youtube1.jpg' %}">
+        </div>
+        <br>
+        <a href="omkardokhale@0493gmail.com" class="ftext">Copyright 2023 | omkardokhale0493@gmail.com</a><br>
+    </footer>
+
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/script.js"></script>
+
+
+
+</body>
+
+</html>
+
+</html>

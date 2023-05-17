@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cars Rental Project</title>
+
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        form {
+            border-radius: 5px;
+            font-style: italic;
+            box-shadow: 2px 2px 15px;
+            text-align: left;
+            width: 30%;
+            margin: 10px 500px 20px 500px;
+            padding: 10px 20px 10px 20px;
+            /* justify-content: flex-end;
+            justify-content: flex-start;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between; */
+            size: 20ch;
+            font-size: large;
+
+        }
+
+
+        body {
+            background: url(./images/1.jfif);
+            background-size: 100%;
+        }
+
+        #name, #login, #cpassword,#no,#email,#password,#dob{
+        width: 220px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        outline: 0;
+        padding: 5px;
+       }
+
+        .Heading {
+            text-align: center;
+            letter-spacing: 0.5ch;
+            text-decoration: underline;
+            text-transform: uppercase;
+            
+            font-family: sans-serif;
+            font-style: italic;
+        }
+
+        #submit,#reset{
+            padding: 5px;
+            border-radius: 3px;
+            outline: 0;
+            border: 1px solid #ddd;
+            width: 125px;
+            color: black;
+        }
+
+        #recover{
+            padding: 3.8px;
+            border-radius: 3px;
+            outline: 0;
+            border: 1px solid #ddd;
+            width: 125px;
+            color: black;
+        }
+
+        #f,#r,#s{
+            text-decoration: none;
+            color: black;
+        }
+        
+        button f:hover{
+            color: red;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body style="background-color: chartreuse;">
+    <header class="navbar">
+
+        <ul>
+            <div class="logo">
+                <h3>Car Rental Management System</h3>
+
+            </div>
+            <li><a class="active" href="Logout.html">Logout</a></li>
+            <li><a class="about" href="contact us.html">Contact Us</a></li>
+            <li><a class="book" href="login.html">Login</a></li>
+            <li><a class="cars" href="Register.html">Register</a></li>
+            <li><a class="register" href="Cars.html">Vehicles</a></li>
+            <li><a class="login" href="Book your car.html">Book your car</a></li>
+            <li><a class="cantact" href="About.html">About</a></li>
+            <li><a class="logout" href="index.html">Home</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <form style="border: 2px solid rgb(21, 20, 20); background-color: rgba(0, 0, 0, 0.5);">
+
+            <div class="Heading">
+                <h3 style="color: white; text-align: center;">Register Here</h3><br>
+            </div>
+
+            <label style="color: white;">First Name:</label><br>
+            <input type="text" id="name" name="first_name" value="" placeholder="Enter your name"><br><br>
+
+            <label style="color: white;" style="padding-left:50px;">Last Name:</label><br>
+            <input type="text" id="login" name="last_name" value="last_name" placeholder="Enter your last name"><br><br>
+
+            <!-- <label style="color: white;">Password:</label><br> -->
+            <!-- <input type="password" id="password" value="" placeholder="Enter your password"><br><br>
+
+            <label style="color: white;">Confirm Password:</label><br>
+            <input type="password" id="cpassword" value="" placeholder="confirm your password"><br><br> -->
+
+            <p style="color: white;">Select your gender:</p>
+            <label style="color: white;">Male<input type="radio" name="gender" value="male" /></label>
+            <label style="color: white;">Female<input type="radio" name="gender" value="female" /></label>
+            <label style="color: white;">Other<input type="radio" name="gender" value="other" /></label><br><br>
+
+            <label style="color: white;">Password:</label><br>
+            <input type="password" id="password" name="" value="" placeholder="Enter your password"><br><br>
+
+            <label style="color: white;">Confirm Password:</label><br>
+            <input type="password" id="cpassword" name="password" value="" placeholder="confirm your password"><br>
+
+            <!-- <input type="radio" id="" value="">Male
+            <input type="radio" id="" value="">Female
+            <input type="radio" id="" value="">Other -->
+            <br><br>
+            <label style="color: white;">Email:</label><br>
+            <input type="email" id="email" name="email" value="" placeholder="Enter your email"><br><br>
+
+            <label style="color: white;">Mobile No.:</label><br>
+            <input type="number" id="no" name="num" value="" placeholder="Enter your mobile no."><br><br>
+
+            <label style="color: white;">Date of birth:</label><br>
+            <input type="date" id="dob" name="d"><br><br>
+
+            <div class="form-button">
+                <button type="submit" style="background-color:skyblue" id="submit"><a href="login.html" id="s">Submit</a></button>
+                <button type="reset" style="background-color: lightgreen;" id="reset"><a href="Register.html" id="r">Reset</a></button>
+                <button type="recover" style="background-color: rgb(255, 238, 0);" id="recover"><a href="recover forgot password.html" id="f">Forgot Password</a></button>
+
+            </div>
+        </form>
+
+    </main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/About.css">
+  <title> {% block title %}Home Page{% endblock title %}</title>
+</head>
+
+<body>
+  <header class="navbar">
+
+    <ul>
+        <div class="logo">
+            <h3>Car Rental Management System</h3>
+
+        </div>
+        <li><a class="active" href="Logout.html">Logout</a></li>
+        <li><a class="about" href="contact.html">Contact Us</a></li>
+        <li><a class="book" href="login.html">Login</a></li>
+        <li><a class="cars" href="Register.html">Register</a></li>
+        <li><a class="cars" href="Cars.html">Cars List</a></li>
+        <li><a class="register" href="Cars.html">Vehicles</a></li> -->
+        <li><a class="login" href="Book your car.html">Book your car</a></li>
+        <li><a class="cantact" href="static/html/About.html">About</a></li>
+        <li><a class="logout" href="index.html">Home</a></li>
+    </ul>
+
+</header>
+
+  {% if messages %}
+  {% for message in messages %}
+  <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+    <strong>{{ message }}</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% block body %} {% endblock body %}
+
+
+    <footer>
+      <p><br>
+          <a href="omkardokhale@0493gmail.com" style="text-decoration: none; font-size: large;">Copyright 2023 | omkardokhale0493@gmail.com</a>
+      </p>
+  </footer>
+
+
+
+  <script src="static/js/index.js"></script>
+  <script src="static/js/index.js"></script>
+</body>
+
+</html>

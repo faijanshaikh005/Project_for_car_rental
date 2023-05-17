@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock title %}
+{% load static %}
+
+
+
+
+{% comment %} <!doctype html>
+<html lang="en"> {% endcomment %}
+
+{% comment %} <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/Register.css">
+
+
+</head> {% endcomment %}
+
+
+<body>
+    {% comment %} <header class="navbar">
+
+        <ul>
+            <div class="logo">
+                <h3>Car</h3>
+
+            </div>
+           
+            <li><a class="about" href="./contact.html">Contact Us</a></li>
+            <li><a class="book" href=".html">Login</a></li>
+            <li><a class="cars" href="./Register.html">Register</a></li>
+            <li><a class="cars" href="./Cars.html">Cars List</a></li>
+            <li><a class="register" href="./Cars.html">Vehicles</a></li>
+            <li><a class="login" href="./BookYourCar.html">Book your car</a></li>
+            <li><a class="cantact" href="./about.html">About</a></li>
+            <li><a class="logout" href="./index.html">Home</a></li>
+        </ul>
+
+    </header> {% endcomment %}
+
+
+    {% block body %} 
+
+    <div class="bd-example" style="background-color: orange;">
+        <form action="{% url "register" %}" method="post"  id="form">
+            {% csrf_token %}
+            <div class="Heading">
+                <h3 style="color: black; text-align: center;">Creat your account</h3><br>
+            </div>
+
+            <label style="color: black;">Name:</label><br>
+            <input type="text" class="form-control" id="name" name="name" value="" placeholder="Enter your name">
+
+            <br>
+            <label style="color: black;">Email:</label><br>
+            <input class="form-control" type="email" id="email" name="email" value="" placeholder="Enter your email">
+
+            <label style="color: black;">Select your gender:</label><br>
+            <!-- <p style="color: black;">Select your gender:</p> -->
+            <select>
+                <option class="ui dropdown">Gender</option>
+                <option class="ui dropdown" value="male" id="gender" name="gender" value="male">Male</option>
+                <option class="ui dropdown" value="female" id="gender" name="gender" value="male">Female</option>
+                <option class="ui dropdown" value="other" id="gender" name="gender" value="male">Other</option>
+              </select>
+
+            <br><br>
+
+            <label style="color: black;">Password:</label><br>
+            <input type="password" class="form-control" id="password" name="password" value="" placeholder="Enter your password"><br>
+
+            <label style="color: black;">Confirm Password:</label><br>
+            <input type="cpassword" class="form-control" id="cpassword" name="cpassword" value="" placeholder="confirm your password"><br>
+
+
+
+            <label style="color: black;">Mobile No.:</label><br>
+            <input type="number" class="form-control" id="phone" name="phone" value="" placeholder="Enter your mobile no."><br>
+
+            <label style="color: black;">Date of birth:</label><br>
+            <input type="date" class="form-control" id="dob" name="dateofbirth"><br>
+
+            <div class="form-button">
+                <button class="btn btn-primary" type="submit" id="">Submit</button>
+                <button class="btn btn-primary" type="reset" style="background-color: rgb(74, 189, 74);" id=""><a href="Register.html" id="r">Reset</a></button>
+                
+
+            </div>
+        </form>
+    </div>
+
+    {% endblock body %}  
+</body>
+
+</html>

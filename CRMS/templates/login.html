@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <link rel="stylesheet" href="static/css/index.css"> {% endcomment %}
+    <link rel="stylesheet" href="static/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+   
+    
+<div class="admin"><a href="./admin_login.html" id="admin1">Admin Login</a></div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        
+        
+        <form class="login_form" action="{% url "register" %}" method="post" name="form" onsubmit="return validated()">
+            {% csrf_token %}
+            <h1 class="lable" id="u">User Login</h1>
+            <div for="inputEmail" class="font">Username</div>
+            <input id="inputEmail" autocomplete="off" type="text" name="username">
+            <div id="email_error">Please fill up your Email</div>
+
+            <div class="font font2">Password</div>
+            <input type="password" name="password">
+            <div id="password_error">Please fill up your Password</div>
+            
+            <button type="submit" id="lb">Login</button>
+            
+            <p>New around here?<a id="s" href="./register.html">Sign up</a></p>
+            <a id="r" href="./recover forgot password.html">Forgot password</a>
+        </form>
+        
+    </div>
+
+    <script src="static/js/login.js"></script>
+
+
+</body>
+
+</html>

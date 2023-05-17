@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/About.css">
+  <title> {% block title %}Home Page{% endblock title %}</title>
+</head>
+
+
+<body>
+{% block body %}
+
+<header class="navbar">
+
+    <ul>
+        <div class="logo">
+            <h3>Car Rental Management System</h3>
+
+        </div>
+        <li><a class="active" href="Logout.html">Logout</a></li>
+        <li><a class="about" href="contact.html">Contact Us</a></li>
+        <li><a class="book" href="login.html">Login</a></li>
+        <li><a class="cars" href="Register.html">Register</a></li>
+        <li><a class="cars" href="Cars.html">Cars List</a></li>
+        <li><a class="register" href="Cars.html">Vehicles</a></li> -->
+        <li><a class="login" href="Book your car.html">Book your car</a></li>
+        <li><a class="cantact" href="static/html/About.html">About</a></li>
+        <li><a class="logout" href="index.html">Home</a></li>
+    </ul>
+
+</header>
+
+    <main class="text">
+        <header id="showcase">
+            <h1 id="w">Welcome to About us</h1>
+        </header>
+        <div id="conent" class="container">
+            <p>The car rental business are limited to a virtual reality area, the car rental industry has come up with new delicacies. Even if the physical environment has not yet been completely eradicated, the power of the internet has changed the nature of jobs and the way these jobs are done. Customers can now book cars online, rent cars online, and bring the car to their home if they area registered member, or they can go to the office to pick up the car.
+            </p>
+        </div>
+<div class="main-btn">
+    <a class="btn" bhref="#">Read more</a>
+</div>
+    
+
+    </main>
+
+
+
+
+    {% endblock body %}
+
+<script src="static/js/about.js"></script>
+
+
+</body>
+</html>

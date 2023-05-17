@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<!-- ---------------------------main---------------------- -->
+<main>
+    <!-- <div class="slideshow">
+        <img class="mySlides" src="{% static 'images/car1.jpg' %}" height="500rem">
+        <img class="mySlides" src="{% static 'images/car13.jpg' %}" height="500rem">
+        <img class="mySlides" src="{% static 'images/car8.jpg' %}" height="500rem">
+    </div>  -->
+    <div class="carnavbar">
+        <img src="{% static 'images/picsart.jpg' %}" class="carnavbar">
+        <!-- <div class="centered"><form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div> -->
+    </div>
+    
+    <h2 class="w">Welcome to Online Car Rental System</h2>
+
+
+    <!-- Cards -->
+    <div class="container swiper">
+        <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="{% static 'images/car1.jpg' %}" alt="" />
+                    </div>
+                    <div class="profile-details">
+                        
+                        <div class="carinfo"> 
+                            <p>Car Company Name: Suzuki</p>
+                            <p>Car Name: Swift</p>
+                            <p>Car Type: SUV</p>
+                        </div>
+                       
+                        <a href="./Cars.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="{% static 'images/car12.jpg' %}" alt="" />
+                    </div>
+                    <div class="profile-details">
+                        <div class="carinfo"> 
+                            <p>Car Company Name: Suzuki</p>
+                            <p>Car Name: Swift</p>
+                            <p>Car Type: SUV</p>
+                        </div>
+                        <a href="./Cars.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="{% static 'images/car13.jpg' %}" alt="" />
+                    </div>
+                    <div class="profile-details">
+                        <div class="carinfo"> 
+                            <p>Car Company Name: Suzuki</p>
+                            <p>Car Name: Swift</p>
+                            <p>Car Type: SUV</p>
+                        </div>
+                        <a href="./Cars.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="{% static 'images/car7.jpg' %}" alt="" />
+                    </div>
+                    <div class="profile-details">
+                        <div class="carinfo"> 
+                            <p>Car Company Name: Suzuki</p>
+                            <p>Car Name: Swift</p>
+                            <p>Car Type: SUV</p>
+                        </div>
+                        <a href="./Cars.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="{% static 'images/car10.jpg' %}" alt="" />
+                    </div>
+                    <div class="profile-details">
+                        <div class="carinfo"> 
+                            <p>Car Company Name: Suzuki</p>
+                            <p>Car Name: Swift</p>
+                            <p>Car Type: SUV</p>
+                        </div>
+                        <a href="./Cars.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</main>
+
+    {% endblock body %}
